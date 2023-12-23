@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/5548c0f5ac.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fevicon link -->
+    <link rel="shortcut icon" href="./images/channels4_profile.jpg" type="image/x-icon">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Online Shopping</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-div {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="top-nav">
+        <div class="navigation">
+            <ul class="nav">
+                <li class="list1"><img class="logo" src="./images/IIZvz8HxGpxmd4nnI5Irsnm0JAx1666857561209_200x200.png"
+                        alt="logo">
+                </li>
+                <li class="list1"><input class="search" type="search" name="search bar" id="search"
+                        placeholder="Search for products,brands and more"></li>
+                <button class="search-btn" type="button" value=""><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512">
+                        <style>
+                            svg {
+                                height: 20px;
+                                width: 20px;
+                                fill: #0f5ee6
+                            }
+                        </style>
+                        <path
+                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                    </svg></button>
+                <li class="list1"><input class="login-btn" type="button" value="Login"></li>
+                <li class="list1"><a class="seller" href="#" style="color: white;"> Become a Seller</a></li>
+                <li class="list1">
+                    <div class="dropdown">
+                        <button class="drop-down">More</button>
+                        <div class="drop-down-content">
+                            <a class="list1-links" href="#">Notification Preference</a>
+                            <a class="list1-links" href="#">24X7 Customer Care</a>
+                            <a class="list1-links" href="#">Advertise</a>
+                            <a class="list1-links" href="#">Download the App</a>
+                        </div>
+                    </div>
+                </li>
+                <svg class="svg-2" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                    <style>
+                        .svg-2 {
+                            fill: #fafcff
+                        }
+                    </style>
+                    <path
+                        d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" />
+                </svg>
+                <li style="margin-left: 0px;"><a class="cart" href="#" style="color: white;">Cart</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section for all the logos -->
+
+    <section id="logo">
+        <div class="logo-section">
+            <table class="logo-table" style="width:100%; text-align:center">
+                <tr class="logo-tr">
+                    <td class="logo-td"><img class="logo-img" src="./images/logo1.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Top Offers</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo2.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Mobiles & Tablets</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo3.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Electronics</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo4.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">TV & Appliances</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo5.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Fashion</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo6.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Beauty</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo7.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Home & Kitchen</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo8.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Furniture</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo9.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Flights</a> </li>
+                        </ul>
+                    </td>
+                    <td class="logo-td"><img class="logo-img" src="./images/logo10.png" alt="">
+                        <ul>
+                            <li><a class="logo-list1" href="#">Grocery</a> </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- carousel section begins  -->
+    <section id="carousel-section">
+        <div class="slideshow-container">
+            <div class="carousel-image">
+                <img class="change" src="./images/a7829da5d95efc3b.webp" alt="">
+                <img src="./images/slider.webp" alt="">
+                <img src="./images/slider2.webp" alt="">
+            </div>
+
+            <!-- <a href="" class="prev" onclick="plusSlides(-1)">❮</a>
+            <a href="" class="next" onclick="plusSlides(1)">❯</a> -->
+        </div>
+    </section>
+
+    <!-- section for bank offers  -->
+    <section id="bank-offers">
+        <div class="bank-offer-div">
+            <img src="./images/bank-offers.jpeg" alt="" class="bank-offers-img">
+        </div>
+    </section>
+
+
+
+    <!-- electronics sections -->
+    <section id="electronics-section" style="margin-bottom: 23px;">
+        <div class="container-1">
+            <table class="electronics" style="width:100%;">
+                <tr>
+                    <td class="electronics-td">
+                        <ul>
+                            <li class="electronics-list-item1">
+                                <h2>Best of Electronics</h2>
+                            </li>
+                            <li class="electronics-list-item2">
+                                <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                            </li>`
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><img src="./images/computer.webp" alt="" class="electronics-image"></li>
+                            <li><a class="list-items-value-name" href="#">Monitors</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Dell, HCl & more</a> </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><img src="./images/printers.webp" alt="" class="electronics-image"></li>
+                            <li><a class="list-items-value-name" href="#">Printers</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Canon, HCl & more</a> </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><img src="./images/powerbanks.webp" alt="" class="electronics-image"></li>
+                            <li><a class="list-items-value-name" href="#">Powerbanks</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Dell, HCl & more</a> </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><img src="./images/computer.webp" alt="" class="electronics-image"></li>
+                            <li><a class="list-items-value-name" href="#">Monitors</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Dell, HCl & more</a> </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- section for best offers aeroplane -->
+    <section id="best-section">
+        <div class="best-plans">
+            <img class="image-air" src="./images/side-img-2.webp" alt="">
+        </div>
+    </section>
+
+    <!-- section for best offers on big billion -->
+    <section id="billion-offers-section">
+        <div class="billion-offers">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image1.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image2.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image3.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- section for foundation -->
+    <section id="foundation-section">
+        <div class="foundation">
+            <table style="width:100%;">
+                <tr>
+                    <td class="foundation-td">
+                        <img src="./images/flipkart-foundation.png" alt="" class="foundation-image1" style="width:100%">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+
+
+    <!-- section for beauty  -->
+    <section id="beauty-section" class="space">
+        <table class="electronics-1" style="width:100%;">
+            <tr>
+                <td class="electronics-td">
+                    <ul>
+                        <li class="electronics-list-item1">
+                            <h2 style="width:14.3rem">Top Deals on Fashion</h2>
+                        </li>
+                        <li class="electronics-list-item2">
+                            <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                        </li>`
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/fashion-images/shoe-image3webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">PUMA,ADDIDAS & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Min. 50% Off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Men's Shoes, Sneakers...</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/fashion-images/shoe-image2.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">WROGN. Red Tape & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Min. 40% Off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Men's Shoes, Sneakers...</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/fashion-images/shoe-image.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Campus, Asian & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Under ₹799</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Men's Shoes, Sneakers...</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/fashion-images/shoe-image3.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Bata & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Under ₹899 </a> </li>
+                        <li><a class="list-items-value-brand" href="#">Women's Sandals, Slippers...</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <div class=" menu target">
+                        <ul>
+                            <li><img src="./images/fashion-images/shoe-image2.webp" alt="" class="electronics-image">
+                            </li>
+                            <li><a class="list-items-value-name" href="#">WROGN. Red Tape & more</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Min. 40% Off</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Men's Shoes, Sneakers...</a> </li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+
+                    <div class="target">
+                        <ul>
+                            <li><img src="./images/fashion-images/shoe-image.webp" alt="" class="electronics-image">
+                            </li>
+                            <li><a class="list-items-value-name" href="#">Campus, Asian & more</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Under ₹799</a> </li>
+                            <li><a class="list-items-value-brand" href="#">Men's Shoes, Sneakers...</a> </li>
+                        </ul>
+                    </div>
+                </td>
+                </div>
+                <td>
+                    <div class="target">
+                        <ul>
+                            <li><img src="./images/fashion-images/shoe-image3.webp" alt="" class="electronics-image">
+                            </li>
+                            <li><a class="list-items-value-name" href="#">Bata & more</a> </li>
+                            <li><a class="list-items-value-shop" href="#">Under ₹899 </a> </li>
+                            <li><a class="list-items-value-brand" href="#">Women's Sandals, Slippers...</a> </li>
+                        </ul>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        </div>
+
+    </section>
+
+    <!-- section for button  -->
+    <section id="button1-container">
+        <div class="button-img" style=" color: #a72c2c;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512">
+                <path
+                    d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- section for second offers -->
+    <section id="billion-offers-section-2">
+        <div class="billion-offers-2">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image4.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image5.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image6.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- section for featured brands -->
+    <section id="billion-offers-section-2">
+        <div class="billion-offers-2" style="margin-top:-10rem;">
+            <h3>Featured Brands</h3>
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image7.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image8.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image9.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- offers on furniture -->
+    <section id="kids-section" class="space">
+        <table class="kids" style="width:100%; background-color:white;">
+            <tr>
+                <td class="electronics-td">
+                    <ul>
+                        <li class="electronics-list-item1">
+                            <h2>Offers on Furniture</h2>
+                        </li>
+                        <li class="electronics-list-item2">
+                            <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                        </li>`
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/furniture/swings.webp" alt="" class="electronics-image"
+                                style="width:138px;"></li>
+                        <li><a class="list-items-value-name" href="#">Swings</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 50% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/furniture/shoe-rack.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Shoe Rack</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 40% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/furniture/reclinear.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Reclinear</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 60% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/furniture/sofa-bed.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Sofa-bed</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 50% off</a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <!-- phones 3 sections -->
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image13.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image14.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image15.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- section for tv and appliances-section -->
+    <section id="deals-section" class="space">
+        <table class="kids" style="width:100%; background-color:white;">
+            <tr>
+                <td class="electronics-td">
+                    <ul>
+                        <li class="electronics-list-item1">
+                            <h2>Deals</h2>
+                        </li>
+                        <li class="electronics-list-item2">
+                            <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                        </li>`
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/tv/image1.webp" alt="" class="electronics-image" style="height:65px;">
+                        </li>
+                        <li><a class="list-items-value-name" href="#">AC</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 10% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/tv/fridge2.webp" alt="" class="electronics-image" style="width:91px;">
+                        </li>
+                        <li><a class="list-items-value-name" href="#">Refrigrator</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 60% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/tv/fan3.webp" alt="" class="electronics-image" style="width:113px;"></li>
+                        <li><a class="list-items-value-name" href="#">Fan</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 20% off</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/tv/tv4.webp" alt="" class="electronics-image" style="height:135px;"></li>
+                        <li><a class="list-items-value-name" href="#">TV</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Upto 50% off</a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+
+
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image16.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image17.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image18.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+    <section id="featured-sections-offers">
+        <div class="featured-offers">
+            <h4>Featured Brands</h4>
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/featured-brands/brand-1.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/featured-brands/brand-2.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/featured-brands/brand-3.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- section for offers  -->
+    <section id="offers">
+        <div class="offers">
+            <table style="width:100%">
+                <tr>
+                    <td><img src="./images/offers/off-1.png" alt=""></td>
+                    <td><img src="./images/offers/off-2.png" alt=""></td>
+                    <td><img src="./images/offers/off-3.png" alt=""></td>
+                    <td><img src="./images/offers/off-4.png" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- section for mobiles  -->
+    <section id="mobiles-section" class="space">
+        <table class="mobiles" style="width:100%; background-color:white;">
+            <tr>
+                <td class="electronics-td">
+                    <ul>
+                        <li class="electronics-list-item1">
+                            <h2>Top Offers</h2>
+                        </li>
+                        <li class="electronics-list-item2">
+                            <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                        </li>`
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/mobile-1.webp" alt="" class="electronics-image" style="width:138px;">
+                        </li>
+                        <li><a class="list-items-value-name" href="#">Galaxy</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">S21, S22 & more</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/mobile-2.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Apple</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">13, 13 pro, 14, 14 pro & more</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/mobile-3.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Vivo</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">T1 44W & more</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/mouses.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Web Camera</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Shop Now</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Dell, HCl & more</a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image19.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image20.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image21.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image22.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image23.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image24.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- section for featured brands      -->
+    <section id="featured-sections-offers">
+        <div class="phones-offers">
+            <h4>Featured Brands</h4>
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/featured-brands/brand-4.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/featured-brands/brand-5.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/featured-brands/brand-6.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image25.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image26.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image27.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- deals section  -->
+    <section id="deals-section" class="space">
+        <table class="kids" style="width:100%; background-color:white;">
+            <tr>
+                <td class="electronics-td">
+                    <ul>
+                        <li class="electronics-list-item1">
+                            <h2>Deals</h2>
+                        </li>
+                        <li class="electronics-list-item2">
+                            <a href="#"><input type="button" value="View All" class="electronics-button"></a>
+                        </li>`
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/deals/image1.webp" alt="" class="electronics-image" style="width:138px;">
+                        </li>
+                        <li><a class="list-items-value-name" href="#">Top, Skirts & more </a> </li>
+                        <li><a class="list-items-value-shop" href="#">Min 40% off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Shop for fashion attires</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/deals/image2.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Dress, Jeans & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Min. 60% off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Levi's, Vero Moda & more</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/deals/image3.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Jewellery</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Min. 30% off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Seno, Kalyan's & more</a> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><img src="./images/deals/image4.webp" alt="" class="electronics-image"></li>
+                        <li><a class="list-items-value-name" href="#">Kurta's, Sets & more</a> </li>
+                        <li><a class="list-items-value-shop" href="#">Upto 70% off</a> </li>
+                        <li><a class="list-items-value-brand" href="#">Rangmanch, Melange & more</a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+
+
+    <section id="phones-sections-offers">
+        <div class="phones-offers">
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/3-section/image28.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/3-section/image29.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/3-section/image30.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- section for featured brands      -->
+    <section id="featured-sections-offers-zone">
+        <div class="featured-offers">
+            <h4>Featured Brands</h4>
+            <table style="width: 100%;" class="billion-table-2">
+                <tr>
+                    <td>
+                        <img src="./images/featured-brands/brand-7.png" alt="" class="billion-image1">
+                    </td>
+                    <td><img src="./images/featured-brands/brand-8.png" alt="" class="billion-image1"></td>
+                    <td><img src="./images/featured-brands/brand-9.png" alt="" class="billion-image1"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- section for private policy -->
+    <section class="policy-section">
+        <div class="policy" style="font-size:11px;">
+            <h1>Flipkart: The One-stop Shopping Destination</h1>
+            <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to
+                another in search of the latest phone when you can find it on the Internet in a single click? Not only
+                mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops,
+                tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and
+                lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances
+                that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving
+                kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to
+                toys and musical instruments, we got them all covered. You name it, and you can stay assured about
+                finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in
+                your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p>
+            <h2>Flipkart Plus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti rem error numquam quidem dolorem
+                voluptas, corporis consequuntur facilis quam illum voluptatum soluta quos nostrum illo nam magni
+                aspernatur cumque necessitatibus ipsam quis. Odio, dolore consectetur deserunt non accusantium eligendi
+                commodi. Repudiandae labore officia rerum, esse veniam voluptate illum aut, iste nostrum repellendus
+                corporis fugit? Error totam pariatur perferendis aliquam rerum explicabo eaque ut obcaecati debitis
+                beatae praesentium maiores ducimus deleniti ipsam at delectus ea voluptatum, tempore autem molestias.
+                Dignissimos aliquid laboriosam aperiam debitis totam praesentium corrupti! Sunt, repudiandae velit?</p>
+            <h2>No Cost EMI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quibusdam nulla dolorem officia quaerat in
+                porro quidem consequuntur, corporis deserunt nesciunt maiores omnis aut, explicabo modi amet asperiores
+                ipsa, sit repellat expedita ipsam dolore! Dolorum quisquam voluptate suscipit ab exercitationem. Non
+                temporibus optio dolores exercitationem expedita. Assumenda suscipit cumque, magnam labore sapiente modi
+                vel debitis placeat eaque id officia perferendis eum? Nihil facilis ipsam vero rem dignissimos
+                voluptates accusantium itaque aliquid, praesentium, magni eligendi fugiat nisi temporibus vitae quasi
+                omnis.</p>
+            <h2>EMI on Debit Cards</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nesciunt voluptatibus, laborum,
+                soluta nulla amet numquam officia officiis commodi inventore sint. Praesentium nobis architecto facere
+                pariatur soluta ipsam. Laboriosam assumenda itaque natus sequi doloribus, saepe eaque ab sunt a sint
+                quae vero, praesentium reiciendis? Id ducimus a laborum iste, necessitatibus itaque? Maiores debitis
+                consequatur vitae possimus praesentium accusamus, corrupti qui natus enim amet sequi, rem nihil eaque
+                nostrum temporibus magnam.</p>
+            <h2>Mobile Exchange Offers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos deleniti delectus repellendus!
+                Doloribus quisquam hic voluptas quas repellat voluptatum, magni sunt itaque incidunt nulla asperiores ad
+                et dolore eligendi laboriosam, tempore quam. Quam facere ullam odio eaque nulla eveniet vitae impedit
+                vero doloribus laborum, tempore, eos est quia ut autem fugiat dolores quas temporibus enim atque vel
+                necessitatibus ad. Debitis accusantium, recusandae harum nam expedita dolore ea nemo cupiditate!</p>
+            <h2>What Can You Buy From Flipkart?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, laborum? Debitis maiores, esse,
+                temporibus aperiam id odio illo libero nam animi nulla ullam optio quos sed in nostrum fugit obcaecati?
+                Animi, dicta accusamus eaque eum sapiente laudantium facere, amet natus nihil cum reprehenderit alias
+                necessitatibus sequi ipsam vitae sint illum!</p>
+            <h2>Mobile Phones</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum veniam ullam in quo quaerat error!
+                Dolores, ipsam! Aliquid debitis quas ipsum doloribus quibusdam. Dignissimos voluptas animi ipsa
+                voluptate! Optio culpa officiis molestias. Exercitationem, aspernatur laborum! Quibusdam nam, nostrum
+                dignissimos at magnam eos quaerat facere voluptate ratione ipsam cupiditate modi minus!</p>
+            <h2>Electronic Devices and Accessories</h2>
+            <h2>Large Appliances</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore porro adipisci natus deleniti officia
+                aliquid aperiam eos illo accusantium veritatis, consequuntur repellat! Possimus incidunt non similique
+                aperiam. Numquam vel quis, magni laudantium fugit assumenda sit dicta, optio asperiores dolores quae
+                sequi ex nobis obcaecati corporis doloremque nulla repellendus molestias ullam.</p>
+            <h2>Small Home Appliances</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quam ducimus sint quidem. Saepe unde
+                hic odit reprehenderit minima? Saepe vitae est ipsam ad, iste placeat inventore perferendis sapiente
+                odio quidem repudiandae vero quasi officiis nisi corporis alias at similique fugit laboriosam esse
+                reiciendis neque natus deserunt vel! Dolorem, architecto.</p>
+            <h2>Lifestyle</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iusto officiis dolores voluptas
+                architecto repudiandae dolore eius sed quaerat! Necessitatibus non architecto natus, magnam iusto
+                placeat doloribus voluptatibus maxime quasi delectus sunt repellendus accusantium repellat laudantium ad
+                iste omnis cumque, dolorum perspiciatis. In molestiae voluptates fuga sed adipisci, doloremque repellat.
+            </p>
+            <h2>Home and Furniture</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita voluptas fuga hic dolor sequi
+                sapiente velit qui voluptate, maxime reprehenderit placeat in tempore nemo impedit cupiditate nihil,
+                doloribus obcaecati praesentium incidunt doloremque aperiam laboriosam iure itaque! Doloremque, atque
+                quod cumque debitis, nihil voluptatem voluptas perspiciatis cupiditate delectus eum in?</p>
+            <h2>Baby and Kids</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim natus nisi alias cum consectetur a quos,
+                dolor deserunt? Quidem dolorem cumque molestiae eius animi quis sequi vel, obcaecati ex rem, sunt
+                numquam. Provident dolorem minima debitis placeat sit a, explicabo iste vel nam perferendis facilis
+                repellat fuga, vero, voluptate deleniti?</p>
+            <h2>Books, Sports and Games</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repudiandae officiis sed ea
+                corporis voluptatem suscipit. Quis non atque laboriosam fugiat voluptas fugit, sit aut dolor repellat
+                vero animi reprehenderit.</p>
+            <h2>Grocery/Supermart</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur deserunt corrupti nulla veniam
+                distinctio, suscipit dolorum fuga voluptates nihil saepe.</p>
+        </div>
+    </section>
+
+    <!-- section for navigation bar -->
+    <section id="navigation-bar-section">
+        <div class="navigation-bar">
+            <table style="width:100% ; margin-left:5rem;">
+                <tr>
+                    <th class="nav-th">ABOUT</th>
+                    <th class="nav-th">HELP</th>
+                    <th class="nav-th">CONSUMER POLICY</th>
+                    <th class="nav-th">SOCIAL</th>
+                    <th></th>
+                    <th class="nav-th" style="margin-left:0px;">Mail Us:</th>
+                    <th class="nav-th">Registered Office Address</th>
+                <tr>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Stories</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Press</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Wholesale</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Coperate Information</a></li>
+                        </ul>
+                    </td>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list about-help"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Stories</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Press</a></li>
+                        </ul>
+                    </td>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Stories</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Press</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Wholesale</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Coperate Information</a></li>
+                        </ul>
+                    </td>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list"><a class="nav-link" href="#">Contact Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Stories</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Press</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Flipkart Wholesale</a></li>
+                            <li class="about-list"><a class="nav-link" href="#">Coperate Information</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="vertical-line"></div>
+                    </td>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list about-mail" style="line-height: 2;">
+                                Flipkart Internet Private Limited,<br>
+                                Buildings Alyssa, Begonia &<br>
+                                Clove Embassy Tech Village,<br>
+                                Outer Ring Road, Devarabeesanahalli Village,<br>
+                                Bengaluru, 560103,<br>
+                                Karnataka, India
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="nav-td">
+                        <ul>
+                            <li class="about-list about-registered" style="line-height: 2;">
+                                Flipkart Internet Private Limited,<br>
+                                Buildings Alyssa, Begonia & <br>
+                                Clove Embassy Tech Village, <br>
+                                Outer Ring Road, Devarabeesanahalli Village, <br>
+                                Bengaluru, 560103, <br>
+                                Karnataka, India <br>
+                                CIN : U51109KA2012PTC066107 <br>
+                                Telephone: 044-45614700 <br>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- bottom navigation section  -->
+    <section id="bottom-nav-section">
+        <div class="bottom-nav">
+            <ul>
+                <li class="nav-list-items"><img class="bottom-icon"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K">
+                    Become a Seller</li>
+                <li class="nav-list-items"><img class="bottom-icon"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                        alt="">Advertise</li>
+                <li class="nav-list-items"><img class="bottom-icon"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                        alt="">Gift Cards</li>
+                <li class="nav-list-items"><img class="bottom-icon"
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                        alt="">Help Center</li>
+                <li class="nav-list-items">&copy;2007-2023 Flipkart.com</li>
+                <li class="nav-list-items"><img src="./images/partners.svg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
